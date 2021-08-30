@@ -107,16 +107,16 @@ img {
 .section {
   padding: 2rem 0 4rem;
 }
-.section_title {
+.section__title {
   font-size: var(--h1-font-size);
 }
-.section_subtitle {
+.section__subtitle {
   display: block;
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-3);
 }
-.section_subtitle,
-.section_subtitle {
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
@@ -403,10 +403,85 @@ img {
   transition: 0.4s;
 }
 
+.skills__list {
+  row-gap: 1.5rem;
+  transition: 0.4s;
+}
+
 .skills__titles {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar {
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__html {
+  width: 80%;
+}
+.skills__css {
+  width: 70%;
+}
+.skills__js {
+  width: 90%;
+}
+.skills__react {
+  width: 65%;
+}
+
+.skills__php {
+  width: 80%;
+}
+.skills__node {
+  width: 70%;
+}
+.skills__firebase {
+  width: 90%;
+}
+.skills__phyton {
+  width: 65%;
+}
+
+.skills__figma {
+  width: 80%;
+}
+.skills__sketch {
+  width: 70%;
+}
+.skills__photoshop {
+  width: 90%;
+}
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
 
